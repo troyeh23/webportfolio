@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
@@ -19,10 +22,10 @@
 
 		<title>Portfolio</title>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="0">
 
 		<!-- Navbar Section -->
-		 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		 <nav id="navsam1" class="navbar fixed-top navbar-expand-lg navbar-light bg-white px-lg-5">
 		   <a class="navbar-brand" href="#landing">Troy</a>
 		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		     <span class="navbar-toggler-icon"></span>
@@ -43,17 +46,29 @@
 		 <div class="container-fluid text-center">
 
 		 	<!-- Landing Section -->
-		 	 <div id="landing" class="row mt-5">
+		 	 <div id="landing" class="row mt-5 min-vh-100">
 
-		 	 	<div class="col-12 col-lg-6 d-lg-flex justify-content-center min-vh-100 align-items-center flex-lg-column order-2 1order-lg-1">
-		 	 		<h1>Egie Troy Trasona</h1>
-		 	 		<h3>Full Stack Web Developer</h3>
+		 	 	<div class="col-12 col-lg-6 d-lg-flex justify-content-center align-items-center flex-lg-column order-2 1order-lg-1 mt-5 ">
+		 	 		<div class="text-center text-lg-left">
+		 	 			<h1>Egie Troy Trasona</h1>
+		 	 			<h4 class="d-none d-md-block">Full Stack Web Developer</h3>
+		 	 			<p class="d-none d-lg-block">Commited to providing high quality work at a timely manner.</p>
+		 	 			<a class="btn bg-custom2 text-light mb-2" href="#contact" role="button">Hire Me</a>
+		 	 		</div>
+
+		 	 		<!-- <div class="jumbotron jumbotron-fluid">
+		 	 		  <h1 class="display-4">Hello, world!</h1>
+		 	 		  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		 	 		  <hr class="my-4">
+		 	 		  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		 	 		  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		 	 		</div> -->
 		 	 		
 		 	 	</div>
 
-		 	 	<div class="col-12 col-lg-6 order-1 order-lg-2">
+		 	 	<div class="d-flex col-12 col-lg-6 order-1 order-lg-2 mb-lg-5 align-items-center justify-content-center">
 
-		 	 		<img src="./images/facenobg.png" class="img-fluid rounded-circle" height="250">
+		 	 		<img src="./images/facenobg2.png" class="img-fluid rounded-circle w-75 w-md-90 w-lg-125 bg-customimage1">
 		 	 		
 		 	 	</div>
 		 	 	
@@ -61,29 +76,29 @@
 		 	<!-- End Landing Section -->
 		 	 
 		 	<!-- Projects Section -->
-		 	 <div id="projects" class="row mt-5">
+		 	 <div id="projects" class="row">
 
-		 	 	<div class="bg-secondary text-light min-vh-100 p-5">
+		 	 	<div class="bg-custom1 text-light min-vh-100 p-5">
 
-		 	 		<h2>My Projects</h2>
+		 	 		<h2 class="text-dark">My Projects</h2>
 		 	 		<div class="d-lg-flex justify-content-center p-md-5">
 
-		 	 			<div class="card bg-dark col-lg-4 mb-5 mb-lg-0">
-		 	 			  <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="card-img-top">
+		 	 			<div class="card bg-dark col-lg-4 mx-0 mx-lg-3 mt-5 mb-lg-0">
+		 	 			  <img src="./images/shot1.png" class="card-img-top mt-3">
 		 	 			  <div class="card-body">
 		 	 			    <p class="card-text">Here I showcase my skills in Html</p>
 		 	 			  </div>
 		 	 			</div>
 
-		 	 			<div class="card bg-dark col-lg-4 mb-5 mb-lg-0">
-		 	 			  <img src="https://www.devopsschool.com/blog/wp-content/uploads/2020/07/bootstrap-5-e1594899049673.png" class="card-img-top" alt="...">
+		 	 			<div class="card bg-dark col-lg-4 mx-0 mx-lg-3 mt-5 mb-lg-0">
+		 	 			  <img src="./images/shot2.png" class="card-img-top mt-3" alt="...">
 		 	 			  <div class="card-body">
 		 	 			    <p class="card-text">Some compilation of my works with bootstrap</p>
 		 	 			  </div>
 		 	 			</div>
 
-		 	 			<div class="card bg-dark col-lg-4 mb-5 mb-lg-0">
-		 	 			  <img src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png" class="card-img-top" alt="...">
+		 	 			<div class="card bg-dark col-lg-4 mx-0 mx-lg-3 mt-5 mb-lg-0">
+		 	 			  <img src="./images/shot3.png" class="card-img-top mt-3" alt="...">
 		 	 			  <div class="card-body">
 		 	 			    <p class="card-text">Demonstrating my prowess in NodeJs</p>
 		 	 			  </div>
@@ -102,14 +117,22 @@
 		 	<!-- Tools Section -->
 		 	 <div id="tools" class="row">
 		 	 	<div class="d-flex mx-auto flex-column">
-		 	 		<div class="d-flex justify-content-center">
+		 	 		<div class="d-flex justify-content-center mt-5">
                         <h2>Tools</h2>
                     </div>
           
-                    <div class="d-lg-flex justify-content-center">
+                    <div class="d-lg-flex justify-content-center" data-aos="fade-up">
                     	<img width="150" src="images/logo-html5.png"/>
                         <img width="150" src="images/logo-css3.png"/>
                         <img width="150" src="images/logo-javascript.png"/>
+                    </div>
+
+                    <div class="d-lg-flex justify-content-center" data-aos="fade-down">
+                    	<img width="150" src="images/logo-bootstrap.png"/>
+                        <img width="150" src="images/logo-git.png"/>
+                        <img width="150" src="images/logo-mongodb.png"/>
+                        <img width="150" src="images/logo-sublime-text-3.png"/>
+                        <img width="150" src="images/logo-nodejs.png"/>
                     </div>
                 </div>
 
@@ -117,8 +140,8 @@
 		 	<!-- End Tools Section -->
 
 		 	<!-- Contact Section -->
-		 	 <div id="contact" class="row bg-dark">
-		 	 	<!-- <h2 class="text-center text-light">Contact Me</h2> -->
+		 	 <div id="contact" class="row bg-dark text-center">
+		 	 	<!-- <h2 class="d-block text-center text-light">Contact Me</h2> -->
 		 	 	<div class="bg-light rounded mx-auto text-dark min-vh-60 mt-5 mb-5 col-12 col-md-10 col-xl-10">
 		 	 		<h2>Contact Me</h2>
 		 	 		<form class="text-md-left">
@@ -132,7 +155,7 @@
 	 		 	 			    <label for="exampleFormControlTextarea1">Message</label>
 	 		 	 			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 	 		 	 			  </div>
-		 	 		  <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Send</button>
+		 	 		  <button type="submit" class="btn bg-custom2 mb-2 text-light" data-toggle="modal" data-target="#exampleModal">Send</button>
 
 		 	 		  <!-- Modal -->
 		 	 		  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -167,5 +190,11 @@
 		<!-- Bootstrap JS Bundle -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
 	</body>
 </html>

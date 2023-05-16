@@ -1,3 +1,16 @@
 body {
 	font-family: 'Kanit', sans-serif;
+	position: relative;
+}
+/*peach?*/
+.bg-custom1 {
+	background-color: #FEE8B0;
+}
+
+/*orange*/
+.bg-custom2 {
+	background-color: #F97B22;
+}
+.bg-customimage1 {
+	background-image: url(./images/bgi2.jpg);
 }
