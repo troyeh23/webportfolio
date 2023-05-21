@@ -1,5 +1,5 @@
 body {
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	position: relative;
 }
 /*peach?*/
@@ -13,4 +13,11 @@ body {
 }
 .bg-customimage1 {
 	background-image: url(./images/bgi2.jpg);
+}
+.custom-icons {
+	color: white;
+}
+.img-fluid-cus {
+	width: auto;
+	height: 50px;
 }
